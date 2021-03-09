@@ -1,0 +1,449 @@
+/* CSS RESET */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* CSS PRESET */
+
+html {
+  font-size: 62.5%; /* Ré-équilibrage du Rem face au Pixel pour des calculs simples */
+  box-sizing: border-box;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo register" "hosting activities";
+  align-items: center;
+  justify-items: center;
+}
+
+section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 1em;
+}
+
+main {
+  max-width: 1200px;
+  padding: 0rem 2rem;
+}
+
+h1 {
+  margin: 2rem 0rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  /* margin: 2rem 0rem; */
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* GENERAL COMPONENTS */
+
+.component {
+  display: flex;
+  background: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* SPECIFIC ITEMS */
+
+.reserviaLogo {
+  padding: 2rem;
+  grid-area: logo;
+  height: 10rem;
+}
+
+.navigationMenu {
+  grid-area: buttons;
+}
+
+.navigationButton {
+  width: 100%;
+  font-weight: 500;
+  padding: 2em;
+  text-align: center;
+  transition: 0.2s;
+  border-bottom: 3px #f2f2f2 solid;
+}
+
+.navigationButton:hover {
+  border-bottom: 3px solid #0065fc;
+  color: #0065fc;
+}
+
+.hostingButton {
+  grid-area: hosting;
+}
+
+.activitiesButton {
+  grid-area: activities;
+}
+
+.registerButton {
+  width: 100%;
+  padding: 2em;
+  border-bottom: none;
+  font-weight: 700;
+  color: #0065fc;
+  text-align: center;
+  grid-area: register;
+}
+
+.searchForm {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.locationIcon {
+  background: #f2f2f2;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem 0 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInput {
+  font-size: 1.6rem;
+  font-weight: 700;
+  max-width: 22rem;
+  height: 5rem;
+  padding: 0 2rem;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+  flex: 1;
+}
+
+.searchButton {
+  font-size: 1.6rem;
+  background: #0065fc;
+  color: white;
+  font-weight: 700;
+  height: 5rem;
+  padding: 0 2rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.searchText {
+  display: none;
+}
+
+.searchIcon {
+  display: flex;
+}
+
+#filters {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchFiltersTitle {
+  margin: 0 1.5rem 1.5rem 0;
+}
+
+.searchFilter {
+  border: 2px solid #f2f2f2;
+  font-weight: 700;
+  border-radius: 50px;
+  min-height: 5rem;
+  margin: 0 1.5rem 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.filterIcon {
+  background: #deebff;
+  border: 2px solid #deebff;
+  color: #0065fc;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filterText {
+  margin: 0 2rem;
+  font-weight: 700;
+}
+
+.searchInfo {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.searchInfoIcon {
+  margin-right: 0.5rem;
+}
+
+.hostingWrapper {
+  padding: 3rem;
+  background: #f2f2f2;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.popularGrid {
+  display: grid;
+  gap: 3rem;
+}
+
+.componentHeader {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popularIcon {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.popularComponentImage {
+  height: 18rem;
+  width: 33%;
+  object-fit: cover;
+  border-radius: 1.5rem 0 0 1.5rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.componentInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.componentTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+}
+
+.componentText {
+  margin-bottom: 0.5rem;
+}
+
+.ratingComponent {
+  margin-top: auto;
+  color: #0065fc;
+}
+
+.ratingIconGrey {
+  color: #c4c3c3;
+}
+
+.hostingGrid {
+  display: grid;
+  gap: 3rem;
+}
+
+.hostingComponent {
+  /* height: 20rem; */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hostingComponentImage {
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.displayMore {
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.activitiesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.activitiesGrid {
+  display: grid;
+  gap: 3rem;
+}
+
+.activitiesComponent {
+  display: flex;
+  min-height: 20rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.activitiesComponentImage {
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.activitiesInfo {
+  padding: 2rem;
+}
+
+.footerTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+}
+
+.footerLink {
+  margin: 1rem 0rem;
+}
+
+.footerComponent:last-child {
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-areas: "logo . hosting activities register";
+    align-items: center;
+  }
+
+  .navigationButton {
+    border-top: 3px transparent solid;
+    border-bottom: none;
+  }
+
+  .navigationButton:hover {
+    border-top: 3px solid #0065fc;
+    border-bottom: none;
+  }
+
+  .searchInput {
+    flex: none;
+  }
+
+  .searchText {
+    display: flex;
+  }
+
+  .searchIcon {
+    display: none;
+  }
+
+  .popularGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .hostingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activitiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footerComponent {
+    margin: 0px;
+    padding: 0rem 10rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .popularGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hostingGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .activitiesGrid {
+    grid-template-rows: 20rem 2rem 2rem 2rem 20rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .activityOne {
+    grid-row: 1/6;
+  }
+
+  .activityTwo {
+    grid-row: 1/4;
+  }
+
+  .activityThree {
+    grid-row: 4/6;
+  }
+
+  .activityFour {
+    grid-row: 1/6;
+  }
+
+  .activityFive {
+    grid-row: 1/3;
+  }
+
+  .activitySix {
+    grid-row: 3/6;
+  }
+
+  .activitiesComponentImage {
+    flex: 1;
+  }
+}

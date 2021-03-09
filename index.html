@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia - OpenClassrooms</title>
+</head>
+<body>
+    <header>
+        <img src="img/reserviaLogo.svg" alt="Reservia Logo" srcset="" class="reserviaLogo">
+        <!-- <div class="navigationMenu"> -->
+            <a href="#hosting" class="navigationButton hostingButton">Hébergement</a>
+            <a href="#activities" class="navigationButton activitiesButton">Activités</a>
+        <!-- </div> -->
+        <a href="" class="navigationButton registerButton">S'inscrire</a>
+    </header>
+    <main>
+        <section id="search">
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form class="searchForm" action="" method="POST">
+                <div class="locationIcon"><span class="material-icons">location_on</span></div>
+                <input type="search" name="search" id="search" class="searchInput" placeholder="Marseille, France">
+                <button type="submit" class="searchButton"> <span class="searchText">Rechercher</span><span class="material-icons searchIcon">search</span> </button>
+            </form>
+            <div id="filters">
+                <h2 class="searchFiltersTitle">Filtres</h2>
+                <div class="searchFilter">
+                    <div class="filterIcon"><span class="material-icons-round">attach_money</span></div>
+                    <span class="filterText">Économique</span>
+                </div>
+                <div class="searchFilter">
+                    <div class="filterIcon"><span class="material-icons-round">family_restroom</span></div>
+                    <span class="filterText">Familial</span>
+                </div>
+                <div class="searchFilter">
+                    <div class="filterIcon"><span class="material-icons-round">favorite</span></div>
+                    <span class="filterText">Romantique</span>
+                </div>
+                <div class="searchFilter">
+                    <div class="filterIcon"><span class="material-icons-round">pets</span></div>
+                    <span class="filterText">Animaux autorisés</span>
+                </div>
+            </div>
+            <div class="searchInfo">
+                <div class="searchInfoIcon"><span class="material-icons-outlined">info</span></div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+        <section id="hosting">
+            <div class="hostingWrapper">
+                <div class="componentHeader"><h2>Les plus populaires</h2><span class="material-icons-round popularIcon">trending_up</span></div>
+                <div class="popularGrid">
+                    <div class="popularComponent component">
+                        <img src="img/popular/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="popularComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Hôtel Le Soleil du Matin</span>
+                            <p class="componentText">Nuit à partir de <b>128€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popularComponent component">
+                        <img src="img/popular/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="popularComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Au Coeur de l'Eau - Chambres d'hôtes</span>
+                            <p class="componentText">Nuit à partir de <b>71€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popularComponent component">
+                        <img src="img/popular/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" class="popularComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Hôtel Tout Bleu et Blanc</span>
+                            <p class="componentText">Nuit à partir de <b>68€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hostingWrapper">
+                <div class="componentHeader"><h2>Hébergement à Marseille</h2><span class="material-icons-round">cottage</span></div>
+                    <div class="hostingGrid">
+                        <div class="hostingComponent component">
+                        <img src="img/hosting/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière" class="hostingComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Auberge la Canebière</span>
+                            <p class="componentText">Nuit à partir de <b>25€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hostingComponent component">
+                        <img src="img/hosting/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port" class="hostingComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Hôtel du Port</span>
+                            <p class="componentText">Nuit à partir de <b>52€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hostingComponent component">
+                        <img src="img/hosting/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les Mouettes" class="hostingComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Hôtel Les Mouettes</span>
+                            <p class="componentText">Nuit à partir de <b>76€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hostingComponent component">
+                        <img src="img/hosting/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge de la Mer" class="hostingComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Auberge de la Mer</span>
+                            <p class="componentText">Nuit à partir de <b>46€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hostingComponent component">
+                        <img src="img/hosting/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="hostingComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Auberge Le Panier</span>
+                            <p class="componentText">Nuit à partir de <b>23€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hostingComponent component">
+                        <img src="img/hosting/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="hostingComponentImage">
+                        <div class="componentInfo">
+                            <span class="componentTitle">Hôtel chez Amina</span>
+                            <p class="componentText">Nuit à partir de <b>96€</b></p>
+                            <div class="ratingComponent">
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                                <span class="material-icons-round ratingIcon">star</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <a href="" class="displayMore">Afficher plus</a>
+            </div>
+        </section>
+        <section id="activities">
+            <div class="activitiesWrapper">
+                <div class="componentHeader"><h2>Activités à Marseille</h2></div>
+                <div class="activitiesGrid">
+                    <div class="activitiesComponent component activityOne">
+                        <img src="img/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="activitiesComponentImage">
+                        <div class="componentInfo activitiesInfo">
+                            <span class="componentTitle">Vieux Port</span>
+                        </div>
+                    </div>
+                    <div class="activitiesComponent component activityTwo">
+                        <img src="img/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="activitiesComponentImage">
+                        <div class="componentInfo activitiesInfo">
+                            <span class="componentTitle">Fort de Pomègues</span>
+                        </div>
+                    </div>
+                    <div class="activitiesComponent component activityThree">
+                        <img src="img/activities/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class="activitiesComponentImage">
+                        <div class="componentInfo activitiesInfo">
+                            <span class="componentTitle">Île du Frioul</span>
+                        </div>
+                    </div>
+                    <div class="activitiesComponent component activityFour">
+                        <img src="img/activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="activitiesComponentImage">
+                        <div class="componentInfo activitiesInfo">
+                            <span class="componentTitle">Parc National des Calanques</span>
+                        </div>
+                    </div>
+                    <div class="activitiesComponent component activityFive">
+                        <img src="img/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class="activitiesComponentImage">
+                        <div class="componentInfo activitiesInfo">
+                            <span class="componentTitle">Notre-Dame-de-la-Garde</span>
+                        </div>
+                    </div>
+                    <div class="activitiesComponent component activitySix">
+                        <img src="img/activities/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="activitiesComponentImage">
+                        <div class="componentInfo activitiesInfo">
+                            <span class="componentTitle">Parc Longchamp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footerComponent">
+            <h3 class="footerTitle">À propos</h3>
+            <a href=""><p class="footerLink">Fonctionnement du site</p></a>
+            <a href=""><p class="footerLink">Conditions générales de vente</p></a>
+            <a href=""><p class="footerLink">Données et confidentialité</p></a>
+        </section>
+        <section class="footerComponent">
+            <h3 class="footerTitle">Nos hébergements</h3>
+            <a href=""><p class="footerLink">Charté qualité</p></a>
+            <a href=""><p class="footerLink">Soumettre votre hôtel</p></a>
+        </section>
+        <section class="footerComponent">
+            <h3 class="footerTitle">Assistance</h3>
+            <a href=""><p class="footerLink">Centre d'aide</p></a>
+            <a href=""><p class="footerLink">Nous contacter</p></a>
+        </section>
+    </footer>
+</body>
+</html>
