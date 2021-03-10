@@ -34,7 +34,6 @@ body {
 header {
   width: 100%;
   max-width: 1200px;
-  margin-top: 2px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -86,9 +85,9 @@ footer {
 /* SPECIFIC ITEMS */
 
 .reserviaLogo {
-  padding: 2rem;
+  padding: 0 2rem;
   grid-area: logo;
-  height: 10rem;
+  height: 6rem;
 }
 
 .navigationMenu {
@@ -176,7 +175,7 @@ footer {
 }
 
 #filters {
-  margin: 2rem 0;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -216,7 +215,6 @@ footer {
 }
 
 .searchInfo {
-  margin: 2rem 0;
   display: flex;
   align-items: center;
 }
