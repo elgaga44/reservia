@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <img src="img/reserviaLogo.svg" alt="Reservia Logo" srcset="" class="reserviaLogo">
+        <img src="img/reserviaLogo.svg" alt="Reservia Logo" class="reserviaLogo">
         <!-- <div class="navigationMenu"> -->
             <a href="#hosting" class="navigationButton hostingButton">Hébergement</a>
             <a href="#activities" class="navigationButton activitiesButton">Activités</a>
@@ -25,9 +25,9 @@
         <section id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <form class="searchForm" action="" method="POST">
+            <form class="searchForm" action="/" method="POST">
                 <div class="locationIcon"><span class="material-icons">location_on</span></div>
-                <input type="search" name="search" id="search" class="searchInput" placeholder="Marseille, France">
+                <input type="search" name="search" class="searchInput" placeholder="Marseille, France">
                 <button type="submit" class="searchButton"> <span class="searchText">Rechercher</span><span class="material-icons searchIcon">search</span> </button>
             </form>
             <div id="filters">
@@ -55,10 +55,10 @@
             </div>
         </section>
         <section id="hosting">
-            <div class="hostingWrapper">
+            <div class="hostingWrapper popularWrapper">
                 <div class="componentHeader"><h2>Les plus populaires</h2><span class="material-icons-round popularIcon">trending_up</span></div>
                 <div class="popularGrid">
-                    <div class="popularComponent component">
+                    <a href="" class="popularComponent component">
                         <img src="img/popular/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="popularComponentImage">
                         <div class="componentInfo">
                             <span class="componentTitle">Hôtel Le Soleil du Matin</span>
@@ -71,8 +71,8 @@
                                 <span class="material-icons-round ratingIcon">star</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="popularComponent component">
+                    </a>
+                    <a href="" class="popularComponent component">
                         <img src="img/popular/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="popularComponentImage">
                         <div class="componentInfo">
                             <span class="componentTitle">Au Coeur de l'Eau - Chambres d'hôtes</span>
@@ -85,8 +85,8 @@
                                 <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="popularComponent component">
+                    </a>
+                    <a href="" class="popularComponent component">
                         <img src="img/popular/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" class="popularComponentImage">
                         <div class="componentInfo">
                             <span class="componentTitle">Hôtel Tout Bleu et Blanc</span>
@@ -99,96 +99,96 @@
                                 <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="hostingWrapper">
-                <div class="componentHeader"><h2>Hébergement à Marseille</h2><span class="material-icons-round">cottage</span></div>
+            <div class="hostingWrapper cityHostingWrapper">
+                <div class="componentHeader"><h2>Hébergement à Marseille</h2></div>
                     <div class="hostingGrid">
-                        <div class="hostingComponent component">
-                        <img src="img/hosting/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière" class="hostingComponentImage">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Auberge la Canebière</span>
-                            <p class="componentText">Nuit à partir de <b>25€</b></p>
-                            <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                        <a href="" class="hostingComponent component">
+                            <img src="img/hosting/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière" class="hostingComponentImage">
+                            <div class="componentInfo">
+                                <span class="componentTitle">Auberge la Canebière</span>
+                                <p class="componentText">Nuit à partir de <b>25€</b></p>
+                                <div class="ratingComponent">
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hostingComponent component">
-                        <img src="img/hosting/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port" class="hostingComponentImage">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Hôtel du Port</span>
-                            <p class="componentText">Nuit à partir de <b>52€</b></p>
-                            <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
+                        </a>
+                        <a href="" class="hostingComponent component">
+                            <img src="img/hosting/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port" class="hostingComponentImage">
+                            <div class="componentInfo">
+                                <span class="componentTitle">Hôtel du Port</span>
+                                <p class="componentText">Nuit à partir de <b>52€</b></p>
+                                <div class="ratingComponent">
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hostingComponent component">
-                        <img src="img/hosting/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les Mouettes" class="hostingComponentImage">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Hôtel Les Mouettes</span>
-                            <p class="componentText">Nuit à partir de <b>76€</b></p>
-                            <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                        </a>
+                        <a href="" class="hostingComponent component">
+                            <img src="img/hosting/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les Mouettes" class="hostingComponentImage">
+                            <div class="componentInfo">
+                                <span class="componentTitle">Hôtel Les Mouettes</span>
+                                <p class="componentText">Nuit à partir de <b>76€</b></p>
+                                <div class="ratingComponent">
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hostingComponent component">
-                        <img src="img/hosting/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge de la Mer" class="hostingComponentImage">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Auberge de la Mer</span>
-                            <p class="componentText">Nuit à partir de <b>46€</b></p>
-                            <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
-                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                        </a>
+                        <a href="" class="hostingComponent component">
+                            <img src="img/hosting/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge de la Mer" class="hostingComponentImage">
+                            <div class="componentInfo">
+                                <span class="componentTitle">Auberge de la Mer</span>
+                                <p class="componentText">Nuit à partir de <b>46€</b></p>
+                                <div class="ratingComponent">
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hostingComponent component">
-                        <img src="img/hosting/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="hostingComponentImage">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Auberge Le Panier</span>
-                            <p class="componentText">Nuit à partir de <b>23€</b></p>
-                            <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                        </a>
+                        <a href="" class="hostingComponent component">
+                            <img src="img/hosting/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="hostingComponentImage">
+                            <div class="componentInfo">
+                                <span class="componentTitle">Auberge Le Panier</span>
+                                <p class="componentText">Nuit à partir de <b>23€</b></p>
+                                <div class="ratingComponent">
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hostingComponent component">
-                        <img src="img/hosting/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="hostingComponentImage">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Hôtel chez Amina</span>
-                            <p class="componentText">Nuit à partir de <b>96€</b></p>
-                            <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
+                        </a>
+                        <a href="" class="hostingComponent component">
+                            <img src="img/hosting/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="hostingComponentImage">
+                            <div class="componentInfo">
+                                <span class="componentTitle">Hôtel chez Amina</span>
+                                <p class="componentText">Nuit à partir de <b>96€</b></p>
+                                <div class="ratingComponent">
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <span class="material-icons-round ratingIcon">star</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </a>
                     </div>
                 <a href="" class="displayMore">Afficher plus</a>
             </div>
@@ -197,42 +197,42 @@
             <div class="activitiesWrapper">
                 <div class="componentHeader"><h2>Activités à Marseille</h2></div>
                 <div class="activitiesGrid">
-                    <div class="activitiesComponent component activityOne">
+                    <a href="" class="activitiesComponent component activityOne">
                         <img src="img/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="activitiesComponentImage">
                         <div class="componentInfo activitiesInfo">
                             <span class="componentTitle">Vieux Port</span>
                         </div>
-                    </div>
-                    <div class="activitiesComponent component activityTwo">
+                    </a>
+                    <a href="" class="activitiesComponent component activityTwo">
                         <img src="img/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="activitiesComponentImage">
                         <div class="componentInfo activitiesInfo">
                             <span class="componentTitle">Fort de Pomègues</span>
                         </div>
-                    </div>
-                    <div class="activitiesComponent component activityThree">
+                    </a>
+                    <a href="" class="activitiesComponent component activityThree">
                         <img src="img/activities/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" class="activitiesComponentImage">
                         <div class="componentInfo activitiesInfo">
                             <span class="componentTitle">Île du Frioul</span>
                         </div>
-                    </div>
-                    <div class="activitiesComponent component activityFour">
+                    </a>
+                    <a href="" class="activitiesComponent component activityFour">
                         <img src="img/activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="activitiesComponentImage">
                         <div class="componentInfo activitiesInfo">
                             <span class="componentTitle">Parc National des Calanques</span>
                         </div>
-                    </div>
-                    <div class="activitiesComponent component activityFive">
+                    </a>
+                    <a href="" class="activitiesComponent component activityFive">
                         <img src="img/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" class="activitiesComponentImage">
                         <div class="componentInfo activitiesInfo">
                             <span class="componentTitle">Notre-Dame-de-la-Garde</span>
                         </div>
-                    </div>
-                    <div class="activitiesComponent component activitySix">
+                    </a>
+                    <a href="" class="activitiesComponent component activitySix">
                         <img src="img/activities/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="activitiesComponentImage">
                         <div class="componentInfo activitiesInfo">
                             <span class="componentTitle">Parc Longchamp</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>

@@ -54,7 +54,6 @@ section {
 
 main {
   max-width: 1400px;
-  padding: 0rem 3rem;
   width: 100%;
 }
 
@@ -83,9 +82,14 @@ footer {
 .component {
   display: flex;
   background: white;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s ease-in-out;
+}
+
+.component:hover {
+  transform: scale(1.03);
 }
 
 /* SPECIFIC ITEMS */
@@ -105,7 +109,7 @@ footer {
   font-weight: 500;
   padding: 2em;
   text-align: center;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
   border-bottom: 3px #f2f2f2 solid;
 }
 
@@ -130,6 +134,10 @@ footer {
   color: #0065fc;
   text-align: center;
   grid-area: register;
+}
+
+#search {
+  padding: 0 3rem;
 }
 
 .searchForm {
@@ -200,6 +208,13 @@ footer {
   margin: 0 1.5rem 1.5rem 0;
   display: flex;
   align-items: center;
+  transition: 0.2s ease-in-out;
+  will-change: transform;
+}
+
+.searchFilter:hover {
+  color: #0065fc;
+  transform: translateY(-3px);
 }
 
 .filterIcon {
@@ -231,11 +246,15 @@ footer {
 
 .hostingWrapper {
   padding: 3rem;
-  background: #f2f2f2;
-  border-radius: 20px;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
+}
+
+.popularWrapper {
+  grid-area: popular;
+  border-radius: 0;
+  background: #f2f2f2;
 }
 
 .popularGrid {
@@ -292,6 +311,10 @@ footer {
   color: #c4c3c3;
 }
 
+.cityHostingWrapper {
+  background: none;
+}
+
 .hostingGrid {
   display: grid;
   grid-auto-rows: 20rem;
@@ -313,6 +336,10 @@ footer {
 .displayMore {
   font-weight: 700;
   margin-top: 3rem;
+}
+
+#activities {
+  padding: 0 3rem;
 }
 
 .activitiesWrapper {
@@ -356,7 +383,7 @@ footer {
   margin-bottom: 0px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 630px) {
   header {
     grid-template-columns: auto 1fr auto auto auto;
     grid-template-areas: "logo . hosting activities register";
@@ -383,6 +410,16 @@ footer {
 
   .searchIcon {
     display: none;
+  }
+
+  #hosting,
+  #activities {
+    padding: 0 3rem;
+  }
+
+  .hostingWrapper {
+    background: #f2f2f2;
+    border-radius: 20px;
   }
 
   .popularGrid {
@@ -412,8 +449,9 @@ footer {
 @media only screen and (min-width: 1000px) {
   #hosting {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 3rem;
+    grid-template-areas: "hosting popular";
   }
 
   .popularGrid {
