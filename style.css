@@ -1,6 +1,3 @@
-/* CSS RESET */
-@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-
 button {
   border: none;
   font-family: inherit;
