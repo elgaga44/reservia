@@ -1,5 +1,15 @@
 /* CSS RESET */
 
+/* @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"); */
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 button {
   border: none;
   font-family: inherit;
@@ -71,7 +81,6 @@ h2 {
 footer {
   width: 100%;
   background: #f2f2f2;
-  padding: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -177,6 +186,8 @@ footer {
   height: 5rem;
   padding: 0 2rem;
   border-radius: 0 2rem 2rem 0;
+  display: flex;
+  align-items: center;
 }
 
 .searchText {
@@ -197,6 +208,12 @@ footer {
 
 .searchFiltersTitle {
   margin: 0 1.5rem 1.5rem 0;
+}
+
+.searchFiltersWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .searchFilter {
@@ -376,6 +393,11 @@ footer {
   margin: 1rem 0rem;
 }
 
+.footerComponent {
+  margin: 0px;
+  padding: 3rem 3rem;
+}
+
 .footerComponent:last-child {
   margin-bottom: 0px;
 }
@@ -434,12 +456,7 @@ footer {
 
   footer {
     flex-direction: row;
-    justify-content: center;
-  }
-
-  .footerComponent {
-    margin: 0px;
-    padding: 0rem 10rem;
+    justify-content: space-around;
   }
 }
 
