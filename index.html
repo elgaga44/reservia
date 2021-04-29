@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/fac3af6c8d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,39 +24,39 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <form class="searchForm" action="/" method="POST">
-                <div class="locationIcon"><span class="material-icons">location_on</span></div>
+                <div class="locationIcon"><i class="fas fa-map-marker-alt"></i></div>
                 <input type="search" name="search" class="searchInput" placeholder="Marseille, France">
-                <button class="searchButton"> <span class="searchText">Rechercher</span><span class="material-icons searchIcon">search</span> </button>
+                <button class="searchButton"> <span class="searchText">Rechercher</span><i class="fas fa-search searchIcon"></i></button>
             </form>
             <div id="filters">
                 <h2 class="searchFiltersTitle">Filtres</h2>
                 <div class="searchFiltersWrapper">
                     <div class="searchFilter">
-                        <div class="filterIcon"><span class="material-icons-round">attach_money</span></div>
+                        <div class="filterIcon"><i class="fas fa-money-bill-wave"></i></div>
                         <span class="filterText">Économique</span>
                     </div>
                     <div class="searchFilter">
-                        <div class="filterIcon"><span class="material-icons-round">family_restroom</span></div>
+                        <div class="filterIcon"><i class="fas fa-child"></i></div>
                         <span class="filterText">Familial</span>
                     </div>
                     <div class="searchFilter">
-                        <div class="filterIcon"><span class="material-icons-round">favorite</span></div>
+                        <div class="filterIcon"><i class="fas fa-heart"></i></div>
                         <span class="filterText">Romantique</span>
                     </div>
                     <div class="searchFilter">
-                        <div class="filterIcon"><span class="material-icons-round">pets</span></div>
+                        <div class="filterIcon"><i class="fas fa-dog"></i></div>
                         <span class="filterText">Animaux autorisés</span>
                     </div>
                 </div>
             </div>
             <div class="searchInfo">
-                <div class="searchInfoIcon"><span class="material-icons-outlined">info</span></div>
+                <div class="searchInfoIcon"><i class="fas fa-info infoIcon"></i></div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
         <section id="hosting">
             <div class="hostingWrapper popularWrapper">
-                <div class="componentHeader"><h2>Les plus populaires</h2><span class="material-icons-round popularIcon">trending_up</span></div>
+                <div class="componentHeader"><h2>Les plus populaires</h2><i class="fas fa-chart-line popularIcon"></i></div>
                 <div class="popularGrid">
                     <a href="" class="popularComponent component">
                         <img srcset="img/popular/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 532w, img/popular/medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w" src="img/popular/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le Soleil du Matin" class="popularComponentImage" loading="lazy">
@@ -64,11 +64,11 @@
                             <span class="componentTitle">Hôtel Le Soleil du Matin</span>
                             <p class="componentText">Nuit à partir de <b>128€</b></p>
                             <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
                             </div>
                         </div>
                     </a>
@@ -78,11 +78,11 @@
                             <span class="componentTitle">Au Coeur de l'Eau - Chambres d'hôtes</span>
                             <p class="componentText">Nuit à partir de <b>71€</b></p>
                             <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                             </div>
                         </div>
                     </a>
@@ -92,11 +92,11 @@
                             <span class="componentTitle">Hôtel Tout Bleu et Blanc</span>
                             <p class="componentText">Nuit à partir de <b>68€</b></p>
                             <div class="ratingComponent">
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon">star</span>
-                                <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                             </div>
                         </div>
                     </a>
@@ -111,11 +111,11 @@
                                 <span class="componentTitle">Auberge la Canebière</span>
                                 <p class="componentText">Nuit à partir de <b>25€</b></p>
                                 <div class="ratingComponent">
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
                             </div>
                         </a>
@@ -125,11 +125,11 @@
                                 <span class="componentTitle">Hôtel du Port</span>
                                 <p class="componentText">Nuit à partir de <b>52€</b></p>
                                 <div class="ratingComponent">
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
                                 </div>
                             </div>
                         </a>
@@ -139,25 +139,25 @@
                                 <span class="componentTitle">Hôtel Les Mouettes</span>
                                 <p class="componentText">Nuit à partir de <b>76€</b></p>
                                 <div class="ratingComponent">
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
                             </div>
                         </a>
                         <a href="" class="hostingComponent component">
-                            <img srcset="img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 500w, img/hosting/medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w" src="img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge de la Mer" class="hostingComponentImage" loading="lazy">
+                            <img srcset="img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 500w, img/hosting/medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w" src="img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la Mer" class="hostingComponentImage" loading="lazy">
                             <div class="componentInfo">
-                                <span class="componentTitle">Auberge de la Mer</span>
+                                <span class="componentTitle">Hôtel de la Mer</span>
                                 <p class="componentText">Nuit à partir de <b>46€</b></p>
                                 <div class="ratingComponent">
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
-                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon"></i>
+                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
+                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
                             </div>
                         </a>
@@ -167,11 +167,11 @@
                                 <span class="componentTitle">Auberge Le Panier</span>
                                 <p class="componentText">Nuit à partir de <b>23€</b></p>
                                 <div class="ratingComponent">
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon ratingIconGrey">star</span>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
                             </div>
                         </a>
@@ -181,11 +181,11 @@
                                 <span class="componentTitle">Hôtel chez Amina</span>
                                 <p class="componentText">Nuit à partir de <b>96€</b></p>
                                 <div class="ratingComponent">
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
-                                    <span class="material-icons-round ratingIcon">star</span>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
                                 </div>
                             </div>
                         </a>
