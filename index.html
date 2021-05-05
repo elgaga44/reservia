@@ -15,8 +15,8 @@
 <body>
     <header>
         <img src="img/reserviaLogo.svg" alt="Reservia Logo" class="reserviaLogo" loading="lazy">
-            <a href="#hosting" class="navigationButton hostingButton">Hébergement</a>
-            <a href="#activities" class="navigationButton activitiesButton">Activités</a>
+        <a href="#hosting" class="navigationButton hostingButton">Hébergement</a>
+        <a href="#activities" class="navigationButton activitiesButton">Activités</a>
         <a href="" class="navigationButton registerButton">S'inscrire</a>
     </header>
     <main>
@@ -31,22 +31,22 @@
             <div id="filters">
                 <h2 class="searchFiltersTitle">Filtres</h2>
                 <div class="searchFiltersWrapper">
-                    <div class="searchFilter">
+                    <article class="searchFilter">
                         <div class="filterIcon"><i class="fas fa-money-bill-wave"></i></div>
                         <span class="filterText">Économique</span>
-                    </div>
-                    <div class="searchFilter">
+                    </article>
+                    <article class="searchFilter">
                         <div class="filterIcon"><i class="fas fa-child"></i></div>
                         <span class="filterText">Familial</span>
-                    </div>
-                    <div class="searchFilter">
+                    </article>
+                    <article class="searchFilter">
                         <div class="filterIcon"><i class="fas fa-heart"></i></div>
                         <span class="filterText">Romantique</span>
-                    </div>
-                    <div class="searchFilter">
+                    </article>
+                    <article class="searchFilter">
                         <div class="filterIcon"><i class="fas fa-dog"></i></div>
                         <span class="filterText">Animaux autorisés</span>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="searchInfo">
@@ -54,14 +54,14 @@
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <section id="hosting">
-            <div class="hostingWrapper popularWrapper">
-                <div class="componentHeader"><h2>Les plus populaires</h2><i class="fas fa-chart-line popularIcon"></i></div>
+        <div id="hosting">
+            <section class="hostingWrapper popularWrapper">
+                <header class="componentHeader"><h2>Les plus populaires</h2><i class="fas fa-chart-line popularIcon"></i></header>
                 <div class="popularGrid">
                     <a href="" class="popularComponent component">
                         <img srcset="img/popular/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 532w, img/popular/medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w" sizes="(min-width: 630px) 150px, 100px" src="img/popular/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le Soleil du Matin" class="popularComponentImage" loading="lazy">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Hôtel Le Soleil du Matin</span>
+                        <section class="componentInfo">
+                            <h3 class="componentTitle">Hôtel Le Soleil du Matin</h3>
                             <p class="componentText">Nuit à partir de <b>128€</b></p>
                             <div class="ratingComponent">
                                 <i class="fas fa-star ratingIcon"></i>
@@ -70,12 +70,12 @@
                                 <i class="fas fa-star ratingIcon"></i>
                                 <i class="fas fa-star ratingIcon"></i>
                             </div>
-                        </div>
+                        </section>
                     </a>
                     <a href="" class="popularComponent component">
                         <img srcset="img/popular/small/aw-creative-VGs8z60yT2c-unsplash.jpg 504w, img/popular/medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w" sizes="(min-width: 630px) 150px, 100px" src="img/popular/small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'Eau" class="popularComponentImage" loading="lazy">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Au Coeur de l'Eau - Chambres d'hôtes</span>
+                        <section class="componentInfo">
+                            <h3 class="componentTitle">Au Coeur de l'Eau - Chambres d'hôtes</h3>
                             <p class="componentText">Nuit à partir de <b>71€</b></p>
                             <div class="ratingComponent">
                                 <i class="fas fa-star ratingIcon"></i>
@@ -84,12 +84,12 @@
                                 <i class="fas fa-star ratingIcon"></i>
                                 <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                             </div>
-                        </div>
+                        </section>
                     </a>
                     <a href="" class="popularComponent component">
                         <img srcset="img/popular/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 500w, img/popular/medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w" sizes="(min-width: 630px) 150px, 100px" src="img/popular/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout Bleu et Blanc" class="popularComponentImage" loading="lazy">
-                        <div class="componentInfo">
-                            <span class="componentTitle">Hôtel Tout Bleu et Blanc</span>
+                        <section class="componentInfo">
+                            <h3 class="componentTitle">Hôtel Tout Bleu et Blanc</h3>
                             <p class="componentText">Nuit à partir de <b>68€</b></p>
                             <div class="ratingComponent">
                                 <i class="fas fa-star ratingIcon"></i>
@@ -98,73 +98,73 @@
                                 <i class="fas fa-star ratingIcon"></i>
                                 <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                             </div>
-                        </div>
+                        </section>
                     </a>
                 </div>
-            </div>
-            <div class="hostingWrapper cityHostingWrapper">
-                <div class="componentHeader"><h2>Hébergements à Marseille</h2></div>
+            </section>
+            <section class="hostingWrapper cityHostingWrapper">
+                <header class="componentHeader"><h2>Hébergements à Marseille</h2></header>
                     <div class="hostingGrid">
                         <a href="" class="hostingComponent component">
                             <img srcset="img/hosting/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w, img/hosting/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1500w" sizes="350px" src="img/hosting/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière" class="hostingComponentImage" loading="lazy">
-                            <div class="componentInfo">
-                                <span class="componentTitle">Auberge la Canebière</span>
+                            <section class="componentInfo">
+                                <h3 class="componentTitle">Auberge la Canebière</h3>
                                 <p class="componentText">Nuit à partir de <b>25€</b></p>
                                 <div class="ratingComponent">
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
-                            </div>
+                            </section>
                         </a>
                         <a href="" class="hostingComponent component">
                             <img srcset="img/hosting/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 684w, img/hosting/medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w" sizes="350px" src="img/hosting/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port" class="hostingComponentImage" loading="lazy">
-                            <div class="componentInfo">
-                                <span class="componentTitle">Hôtel du Port</span>
+                            <section class="componentInfo">
+                                <h3 class="componentTitle">Hôtel du Port</h3>
                                 <p class="componentText">Nuit à partir de <b>52€</b></p>
                                 <div class="ratingComponent">
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
                                 </div>
-                            </div>
+                            </section>
                         </a>
                         <a href="" class="hostingComponent component">
                             <img srcset="img/hosting/small/reisetopia-B8WIgxA_PFU-unsplash.jpg 750w, img/hosting/medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w" sizes="350px" src="img/hosting/small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les Mouettes" class="hostingComponentImage" loading="lazy">
-                            <div class="componentInfo">
-                                <span class="componentTitle">Hôtel Les Mouettes</span>
+                            <section class="componentInfo">
+                                <h3 class="componentTitle">Hôtel Les Mouettes</h3>
                                 <p class="componentText">Nuit à partir de <b>76€</b></p>
                                 <div class="ratingComponent">
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
-                            </div>
+                            </section>
                         </a>
                         <a href="" class="hostingComponent component">
                             <img srcset="img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 500w, img/hosting/medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w" sizes="350px" src="img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la Mer" class="hostingComponentImage" loading="lazy">
-                            <div class="componentInfo">
-                                <span class="componentTitle">Hôtel de la Mer</span>
+                            <section class="componentInfo">
+                                <h3 class="componentTitle">Hôtel de la Mer</h3>
                                 <p class="componentText">Nuit à partir de <b>46€</b></p>
                                 <div class="ratingComponent">
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon"></i>
-                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
-                                <i class="fas fa-star ratingIcon ratingIconGrey"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon"></i>
+                                    <i class="fas fa-star ratingIcon ratingIconGrey"></i>
+                                    <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
-                            </div>
+                            </section>
                         </a>
                         <a href="" class="hostingComponent component">
                             <img srcset="img/hosting/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 652w, img/hosting/medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1303w" sizes="350px" src="img/hosting/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="hostingComponentImage" loading="lazy">
-                            <div class="componentInfo">
-                                <span class="componentTitle">Auberge Le Panier</span>
+                            <section class="componentInfo">
+                                <h3 class="componentTitle">Auberge Le Panier</h3>
                                 <p class="componentText">Nuit à partir de <b>23€</b></p>
                                 <div class="ratingComponent">
                                     <i class="fas fa-star ratingIcon"></i>
@@ -173,12 +173,12 @@
                                     <i class="fas fa-star ratingIcon"></i>
                                     <i class="fas fa-star ratingIcon ratingIconGrey"></i>
                                 </div>
-                            </div>
+                            </section>
                         </a>
                         <a href="" class="hostingComponent component">
                             <img srcset="img/hosting/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 500w, img/hosting/medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1000w" sizes="350px" src="img/hosting/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="hostingComponentImage" loading="lazy">
-                            <div class="componentInfo">
-                                <span class="componentTitle">Hôtel chez Amina</span>
+                            <section class="componentInfo">
+                                <h3 class="componentTitle">Hôtel chez Amina</h3>
                                 <p class="componentText">Nuit à partir de <b>96€</b></p>
                                 <div class="ratingComponent">
                                     <i class="fas fa-star ratingIcon"></i>
@@ -187,57 +187,57 @@
                                     <i class="fas fa-star ratingIcon"></i>
                                     <i class="fas fa-star ratingIcon"></i>
                                 </div>
-                            </div>
+                            </section>
                         </a>
                     </div>
                 <a href="" class="displayMore">Afficher plus</a>
-            </div>
-        </section>
+            </section>
+        </div>
         <section id="activities">
             <div class="activitiesWrapper">
-                <div class="componentHeader"><h2>Activités à Marseille</h2></div>
+                <header class="componentHeader"><h2>Activités à Marseille</h2></header>
                 <div class="activitiesGrid">
                     <a href="" class="activitiesComponent component activityOne">
                         <img srcset="img/activities/small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 702w, img/activities/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1404w" sizes="(min-width: 1000px) 440px, 315px" src="img/activities/small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="activitiesComponentImage" loading="lazy">
-                        <div class="componentInfo activitiesInfo">
-                            <span class="componentTitle">Vieux Port</span>
-                        </div>
+                        <section class="componentInfo activitiesInfo">
+                            <h3 class="componentTitle">Vieux Port</h3>
+                        </section>
                     </a>
                     <a href="" class="activitiesComponent component activityTwo">
                         <img srcset="img/activities/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 356w, img/activities/medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 711w" sizes="315px" src="img/activities/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="activitiesComponentImage" loading="lazy">
-                        <div class="componentInfo activitiesInfo">
-                            <span class="componentTitle">Fort de Pomègues</span>
-                        </div>
+                        <section class="componentInfo activitiesInfo">
+                            <h3 class="componentTitle">Fort de Pomègues</h3>
+                        </section>
                     </a>
                     <a href="" class="activitiesComponent component activityThree">
                         <img srcset="img/activities/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 648w, img/activities/medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1296w" sizes="315px" src="img/activities/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul" class="activitiesComponentImage" loading="lazy">
-                        <div class="componentInfo activitiesInfo">
-                            <span class="componentTitle">Île du Frioul</span>
-                        </div>
+                        <section class="componentInfo activitiesInfo">
+                            <h3 class="componentTitle">Île du Frioul</h3>
+                        </section>
                     </a>
                     <a href="" class="activitiesComponent component activityFour">
                         <img srcset="img/activities/small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 606w, img/activities/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1212w" sizes="(min-width: 1000px) 440px, 315px" src="img/activities/small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="activitiesComponentImage" loading="lazy">
-                        <div class="componentInfo activitiesInfo">
-                            <span class="componentTitle">Parc National des Calanques</span>
-                        </div>
+                        <section class="componentInfo activitiesInfo">
+                            <h3 class="componentTitle">Parc National des Calanques</h3>
+                        </section>
                     </a>
                     <a href="" class="activitiesComponent component activityFive">
                         <img srcset="img/activities/small/florian-wehde-xW9e8gdotxI-unsplash.jpg 589w, img/activities/medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1178w" sizes="315px" src="img/activities/small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="activitiesComponentImage" loading="lazy">
-                        <div class="componentInfo activitiesInfo">
-                            <span class="componentTitle">Notre-Dame-de-la-Garde</span>
-                        </div>
+                        <section class="componentInfo activitiesInfo">
+                            <h3 class="componentTitle">Notre-Dame-de-la-Garde</h3>
+                        </section>
                     </a>
                     <a href="" class="activitiesComponent component activitySix">
                         <img srcset="img/activities/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 504w, img/activities/medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1008w" sizes="315px" src="img/activities/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="activitiesComponentImage" loading="lazy">
-                        <div class="componentInfo activitiesInfo">
-                            <span class="componentTitle">Parc Longchamp</span>
-                        </div>
+                        <section class="componentInfo activitiesInfo">
+                            <h3 class="componentTitle">Parc Longchamp</h3>
+                        </section>
                     </a>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="footerComponent">
             <h3 class="footerTitle">À propos</h3>
             <a href=""><p class="footerLink">Fonctionnement du site</p></a>
