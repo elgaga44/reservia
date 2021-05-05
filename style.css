@@ -136,7 +136,7 @@ h2 {
 .searchForm {
   margin: 2rem 0;
   display: flex;
-  align-items: center;s
+  align-items: center;
 }
 
 .locationIcon {
@@ -259,11 +259,11 @@ h2 {
   justify-content: center;
 }
 
-  #hosting {
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "hosting" " popular";
-  }
+#hosting {
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "hosting" " popular";
+}
 
 .hostingWrapper {
   padding: 3rem;
