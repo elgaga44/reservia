@@ -259,9 +259,14 @@ h2 {
   justify-content: center;
 }
 
+  #hosting {
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "hosting" " popular";
+  }
+
 .hostingWrapper {
   padding: 3rem;
-  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
 }
