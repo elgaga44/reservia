@@ -117,7 +117,8 @@ footer {
   border-bottom: 3px #f2f2f2 solid;
 }
 
-.navigationButton:hover {
+.hostingButton:hover,
+.activitiesButton:hover {
   border-bottom: 3px solid #0065fc;
   color: #0065fc;
 }
